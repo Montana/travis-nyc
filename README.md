@@ -66,8 +66,15 @@ Now, time to test your project with `nyc`, lets run:
 ```bash
 nyc npm run test
 ```
- 
+If it's successful you should see this in Travis: 
+
+<img width="1208" alt="Screen Shot 2022-05-17 at 5 11 51 PM" src="https://user-images.githubusercontent.com/20936398/168932012-2e06635f-4448-4d96-bfbb-ce504949f53f.png">
+
+If you run it locally, you can get a GUI version of what you're seeing in the Travis build, which looks like this: 
+
+<img width="1774" alt="Screen Shot 2022-05-17 at 5 12 42 PM" src="https://user-images.githubusercontent.com/20936398/168932096-a1426ea2-68f9-47b0-b5f9-e100168c8064.png">
 
 
+## Conclusion 
 
-
+This is the simplest way to use `nyc` and Travis together. This was made by myself (Montana Mendy) and as per usual if you have any questions please email me at [montana@linux.com](mailto:montana@linux.com).
