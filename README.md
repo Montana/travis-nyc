@@ -60,7 +60,28 @@ Now that we are connected, let's run our app:
 node bin/www & 
 ```
 
-Important to have `&` after `node bin/www` or your build will get stuck in Travis, this tells Travis to have it run as a background process. 
+## The `.travis.yml` file
+
+This is how my final `.travis.yml` file came out after I was done creating it: 
+
+```yaml   
+services:
+  - docker
+language: node_js
+node_js:
+  - 17
+script: 
+  - npm init --yes
+  - npm i express mocha chai supertest nyc mongoose
+  - sudo apt-get install gnupg
+  - wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+  - sudo apt-get install -y mongodb-org
+  - sudo systemctl start mongod
+  - node bin/www & 
+  - npm install -g nyc
+  - nyc npm run test
+  ```
+ We call on Docker for services, use Node version 17, and you kind of see how the rest progresses. _Important to have `&` after `node bin/www` or your build will get stuck in Travis, this tells Travis to have it run as a background process._
 
 ## Testing with nyc 
 
