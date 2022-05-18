@@ -13,3 +13,4 @@ script:
   - node bin/www & 
   - npm install -g nyc
   - nyc npm run test
+  - nyc --reporter=lcov --reporter=text-summary ava
