@@ -1,5 +1,8 @@
 ## nyc w/ Travis by Montana Mendy 
 
+<img width="1230" alt="Screen Shot 2022-05-17 at 5 15 52 PM" src="https://user-images.githubusercontent.com/20936398/168932314-811e0aa5-6350-40c0-8e0e-5e77f63842d7.png">
+
+
 First clone my repo: 
 
 ```bash
