@@ -81,7 +81,7 @@ script:
   - npm install -g nyc
   - nyc npm run test
   ```
- We call on Docker for services, use Node version 17, and you kind of see how the rest progresses. _Important to have `&` after `node bin/www` or your build will get stuck in Travis, this tells Travis to have it run as a background process._
+ We call on Docker for services, we are going to use Node version 17, and also start installing the `nyc` packages, and you kind of see how the rest progresses. _Important to have `&` after `node bin/www` or your build will get stuck in Travis, this tells Travis to have it run as a background process._
 
 ## Testing with nyc 
 
