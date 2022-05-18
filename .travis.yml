@@ -14,4 +14,4 @@ script:
   - npm install -g nyc
   - nyc --version 
   - nyc npm run test
-  - nyc check-coverage
+  - nyc --branches
