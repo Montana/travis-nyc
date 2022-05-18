@@ -42,7 +42,7 @@ npm i express mocha chai supertest nyc mongoose
 Depending on your version of node, you may have to run:
 
 ```bash
-- npm install -g nyc
+npm install -g nyc
 ```
 
 For `nyc` to install completely. Let's now connect our app to our mock Mongo server: 
