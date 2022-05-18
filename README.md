@@ -2,6 +2,15 @@
 
 <img width="1230" alt="Screen Shot 2022-05-17 at 5 15 52 PM" src="https://user-images.githubusercontent.com/20936398/168932314-811e0aa5-6350-40c0-8e0e-5e77f63842d7.png">
 
+## How nyc works
+
+The `nyc` command-line-client for Istanbul works well with most JavaScript testing frameworks: tap, mocha, AVA, etc. `nyc` is a command line tool for instrumenting code with Istanbul coverage (the successor to the istanbul command line tool). For more information go to Istanbul's website: https://istanbul.js.org/integrations/ and click the `nyc` integration: 
+
+<img width="1068" alt="Screen Shot 2022-05-17 at 5 26 50 PM" src="https://user-images.githubusercontent.com/20936398/168933210-05e6f227-d524-46e6-91ee-70e3a6ec417d.png">
+
+Let's get onto usage.
+
+## Usage 
 
 First clone my repo: 
 
