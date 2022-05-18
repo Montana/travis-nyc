@@ -12,5 +12,5 @@ script:
   - sudo systemctl start mongod
   - node bin/www & 
   - npm install -g nyc
+  - nyc --version 
   - nyc npm run test
-  - nyc --reporter=lcov --reporter=text-summary ava
